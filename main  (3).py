@@ -1,4 +1,10 @@
- day = int(input("Введите день: "))
+day = int(input("Введите день: "))
+
+if (day >= 32):
+    print("такое количество дней не может быть в одном месяце")
+else:
+    print("такое количестов дней допустимо")   
+
 month = int(input("Введите месяц: "))
 
 if (month == 3 and day >= 1) or (month == 4) or (month == 5) or (month == 6 and day <= 31):
@@ -10,4 +16,4 @@ elif (month == 9 and day >= 1) or (month == 10) or (month == 11 and day <= 30):
 else:
     season = "Зима"
 
-print(f"Дата {day}.{month} относится к сезону: {season}")
+print( f"Дата {day} . {month} относится к сезону: {season} ")
